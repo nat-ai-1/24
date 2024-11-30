@@ -1,0 +1,25 @@
+
+<head>
+  <title>Game 24</title>
+  <link rel="stylesheet" href="frontend.css">
+</head>
+<body>
+  <div class="game-container">
+    <h1>Game 24</h1>
+    <div class="numbers-container">
+      <button class="number-btn" id="num1">?</button>
+      <button class="number-btn" id="num2">?</button>
+      <button class="number-btn" id="num3">?</button>
+      <button class="number-btn" id="num4">?</button>
+    </div>
+    <div class="input-container">
+      <input type="text" id="user-input" placeholder="Enter your equation" />
+      <button onclick="checkAnswer()">Check</button>
+    </div>
+    <div class="message" id="message"></div>
+    <button onclick="generateNumbers()">Generate New Numbers</button>
+  </div>
+
+  <script src="backend.js"></script>
+</body>
+</html>
