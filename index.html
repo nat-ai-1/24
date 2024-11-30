@@ -1,16 +1,19 @@
 <head>
-  <title>เกม 24</title>
+  <title>Game 24</title>
   <link rel="stylesheet" href="frontend.css">
 </head>
 <body>
-  <div class="container">
-    <h1>เกม 24</h1>
-    <p>สุ่มตัวเลข 4 ตัวเพื่อให้ได้ผลลัพธ์ 24</p>
+  <div class="game-container">
+    <h1>Game 24</h1>
     <div class="numbers-container">
-      <p>ตัวเลขที่สุ่มได้:</p>
-      <div id="numbers"></div>
+      <button class="number-btn" id="num1">?</button>
+      <button class="number-btn" id="num2">?</button>
+      <button class="number-btn" id="num3">?</button>
+      <button class="number-btn" id="num4">?</button>
     </div>
-    <button onclick="generateNumbers()">สุ่มตัวเลข</button>
+    <div class="input-container"></div>
+    <div class="message" id="message"></div>
+    <button onclick="generateNumbers()">Generate New Numbers</button>
   </div>
 
   <script src="backend.js"></script>
